@@ -3,8 +3,8 @@ use warnings;
 use utf8;
 
 package Pod::Weaver::PluginBundle::RTHOMPSON;
-BEGIN {
-  $Pod::Weaver::PluginBundle::RTHOMPSON::VERSION = '0.103510';
+{
+  $Pod::Weaver::PluginBundle::RTHOMPSON::VERSION = '0.121510';
 }
 # ABSTRACT: A bundle that implements RTHOMPSON's preferred L<Pod::Weaver> config
 
@@ -55,7 +55,7 @@ Pod::Weaver::PluginBundle::RTHOMPSON - A bundle that implements RTHOMPSON's pref
 
 =head1 VERSION
 
-version 0.103510
+version 0.121510
 
 =head1 SYNOPSIS
 

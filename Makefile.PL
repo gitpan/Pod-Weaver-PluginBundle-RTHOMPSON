@@ -2,39 +2,42 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.008; }
+use 5.008;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'A bundle that implements RTHOMPSON\'s preferred L<Pod::Weaver> config',
-  'AUTHOR' => 'Ryan C. Thompson <rct@thompsonclan.org>',
-  'BUILD_REQUIRES' => {
-    'Carp' => '0',
-    'English' => '0',
-    'File::Find' => '0',
-    'File::Temp' => '0',
-    'Scalar::Util' => '0',
-    'Test::More' => '0.94',
-    'perl' => '5.004'
+  "ABSTRACT" => "A bundle that implements RTHOMPSON's preferred L<Pod::Weaver> config",
+  "AUTHOR" => "Ryan C. Thompson <rct\@thompsonclan.org>",
+  "BUILD_REQUIRES" => {
+    "Carp" => 0,
+    "English" => 0,
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Scalar::Util" => 0,
+    "Test::More" => "0.94"
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Pod-Weaver-PluginBundle-RTHOMPSON',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Pod::Weaver::PluginBundle::RTHOMPSON',
-  'PREREQ_PM' => {
-    'Pod::Weaver::Config::Assembler' => '0',
-    'namespace::autoclean' => '0',
-    'utf8' => '0'
+  "DISTNAME" => "Pod-Weaver-PluginBundle-RTHOMPSON",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Pod::Weaver::PluginBundle::RTHOMPSON",
+  "PREREQ_PM" => {
+    "Pod::Weaver::Config::Assembler" => 0,
+    "Pod::Weaver::Plugin::EnsureUniqueSections" => 0,
+    "Pod::Weaver::Section::WarrantyDisclaimer" => 0,
+    "namespace::autoclean" => 0,
+    "strict" => 0,
+    "utf8" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.103510',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.121510",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
